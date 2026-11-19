@@ -1,0 +1,61 @@
+- [Andoria Website](project_andoria_website.md) — industrial/solar equipment site at Documents/andoria-website, has Supabase backend + solar calculator
+- [Soda Landing Page](project_soda_landing_page.md) — single-file index.html hero page, can swapped for generator model, fruits removed
+- [Never Use Higgsfield](feedback_no_higgsfield.md) — user explicitly banned the Higgsfield tool
+- [Prefer Local Assets](feedback_local_assets_preferred.md) — download/self-host assets instead of hotlinking or generating them
+- [3D Hero Techniques](reference_3d_web_hero_techniques.md) — catalog of 3D-model/animation tricks from soda + Laocoön pages, reusable for Andoria
+- [Laocoön Page](project_laocoon_page.md) — cinematic Three.js scroll demo at laocoon.html, second technique-catalog source
+- [Kimi Site](project_kimi_site.md) — GRIDO1/F1 driver site at kimi-index-final.html, third technique-catalog source (Set 3)
+- [Kimi Site Techniques (Set 3)](reference_kimi_site_techniques.md) — spring engine, scroll-triggers, text reveal, halftone/contour canvas, cqw responsive scaling
+- [Filename Collision](feedback_filename_collision.md) — check a generic filename isn't already used by another project before writing
+- [Hard Debug Protocol](feedback_hard_debug_protocol.md) — after a fix survives one failed attempt, verify with real browser tooling (Playwright), not more code-reading
+- [Ultimate Fix Prompt v2](feedback_ultimate_fix_prompt.md) — LOAD for any glitch report / scroll-3D-animation work: delivery gate (A-E), device+stress matrix, honest handoff template, bug watchlist; reusable test script: harness_playwright_cascade_template.js
+- [Cascade Deck Techniques (Set 4)](reference_cascade_deck_techniques.md) — stepped 3D card stack: pose function, wheel-step nav, dt-based loop, perf rules, shop layer
+- [Cascade Deck Demo Pages](project_cascade_deck_shop_pages.md) — print shop + STRIDE shoe store test builds in Documents; finished tests, not to be expanded
+- [Fading Border Techniques (Set 3 #31)](reference_fading_border_techniques.md) — reused often: Technique 1 (static overlay, plain sections) + Technique 2 (scroll-gated, sticky/WebGL sections)
+- [Orbit Fan Techniques (Set 5)](reference_orbit_fan_techniques.md) — draggable fan carousel on a hidden circle: endless wrap, inertia+snap, keep-out zones, overflow:clip gotcha (HAZE shop)
+- [Miniman Shop (Orbit Fan)](project_miniman_shop_fan.md) — Documents/miniman website: shop.html redesigned with Set 5; adaptations for scrolling pages, files, backups, known quirks
+- [Miniman Cloudinary + deploy folder](project_miniman_cloudinary.md) — media on Cloudinary dd9m8ypgl; 'miniman cloudflare' folder now = SHOWROOM deploy (old 2D one renamed); re-sync after edits
+- [Blender Fast 3D Pipeline](reference_blender_fast_3d_pipeline.md) — LOAD for any Blender/GLB job: Blender lives in C:\Users\DELL\tools, reusable scripts, EEVEE not Cycles, modular scripts, GLB export gotchas
+- [Andoria Generator Model](project_andoria_generator_model.md) — ADG-100 Blender/GLB/viewer in assets/models/andoria_generator; approved, not yet wired into the site
+- [Andoria Revamp](project_andoria_revamp.md) — Documents/andoria-revamp: cinematic generator homepage + revamp layer, how to test, what is unverified
+- [Cine Generator Techniques (Set 6)](reference_cine_generator_techniques.md) — clip-plane cross-section, Catmull camera path, setViewOffset, projected labels, engine demo, swiftshader test tips
+- [Web Perf Optimization Prompt](reference_web_perf_optimization_prompt.md) — LOAD for lag/frame-drop reports: paste-ready prompt + ranked checklist (draw-call merging, shader cost, CSS blur, layers) + testing tricks
+- [Mazin Jar Model](project_mazin_jar_model.md) — Dr. Mazin cream jar: Blender hero + web GLB + viewer in Documents/mazin-jar, lathe/label-texture method, gotchas
+- [Dr. Mazin App](project_dr_mazin_app.md) — Documents/dr-mazin-main static site, run on :8082, splash revamp plan around 3D cream jar GLB
+- [Dr. Mazin Auto Intro](project_dr_mazin_auto_intro.md) — Documents/dr-mazin-auto: hero auto-play 3D intro (drop, lid, text out of cream), gotchas, pre-existing back-button bug
+- [Mazin 3D Web Lessons](reference_mazin_3d_web_lessons.md) — LOAD for Three.js/GLB hero + scroll-animation work: GLB texture surgery, phone sharpness policy, scroll-vs-canvas lag, text-emerging choreography, refresh placeholder, real-GPU testing, Pages deploy trimming
+- [Miniman Showroom (3D Spatial Site)](project_miniman_showroom.md) — Documents/miniman showroom: camera-driven 3D navigation SPA, holographic product cards, DOM pointer-events-inheritance bug pattern worth knowing
+- [Showroom Mobile Lessons](reference_showroom_mobile_lessons.md) — LOAD for phone/cross-browser work on camera-driven Three.js sites: Firefox importmap order bug, real-GPU Playwright flags, portrait setViewOffset framing, swipe nav, mobile nav, DPR ladder, LAN phone testing, request-capture deploy folder
+- [Camera Views Composition](reference_camera_views_composition.md) — LOAD when tuning named camera views (pos/look/fov): rig wiring, sizing formulas, copy-vs-subject composition rules, occluders, per-device sets, one-number-at-a-time screenshot loop, how to read "zoom out / move it up"
+- [Showroom Mobile Prefs](feedback_showroom_mobile_prefs.md) — user wants LEFT-aligned text on phones, phone-only changes leave PC alone, btn--solid gold CTAs, Andoria-style shop tiles, Miniman logo close-up on the right
+- [Realistic Product Modeling](feedback_realistic_product_modeling.md) — LOAD for any Blender/GLB product model: pro-viz quality rules, priority order, master+web GLB, validation
+- [Spotlight Curved Carousel (Set 5b)](reference_spotlight_curved_carousel.md) — concave 3D bend-back carousel + ghost numeral, title/meta/dots, counter; template at Documents/spotlight-fan/index.html
+- [Antigravity CLI / Gemini](reference_antigravity_cli_gemini.md) — agy installed + signed in (AI Pro); call headless with agy -p; gemini-cli is dead for personal accounts
+- [Five Concepts Method](reference_five_concepts_method.md) — LOAD when redoing an undecided page: build 5 structurally distinct concepts in a side folder + picker page before committing; includes how to actually make them look different (layout/type/color-weight/motion/imagery/density axes), not just re-skins
+- [AF1 Shoe Model](project_af1_shoe_model.md) — Documents/af1-model: Nike AF1 Low Blender+GLB+viewer from 6 refs, parametric-surface method, known gaps
+- [Gemini Screenshot Redesign Workflow](reference_gemini_screenshot_redesign_workflow.md) — screenshot a real page → agy/Gemini generates a redesign mockup image; view_file+RunCommand permission gotcha & fix, quota fallback, transparency tuning
+- [Mobile CSS Cache-Busting](feedback_mobile_css_cache_busting.md) — always add ?v= to local CSS/JS links when user tests live on phone over LAN; mobile Safari caches independently of HTML, causes "fix isn't showing" loops that look like code bugs
+- [Coverflow Carousel (Set 7)](reference_coverflow_carousel_techniques.md) — flat 3D fan carousel (drag/wheel/keys, darken+scale by distance), generic for any product site; template at Documents/eyewear-carousel/index.html
+- [Product Browsing Paradigms (Set 8)](reference_product_browsing_paradigms.md) — 5 non-carousel browsing UIs (aisle walk, orbit sphere, fan deck, radial dial, camera dolly-zoom); nested-perspective compounding bug + fix; Documents/product-browsers/
+- [Aisle Walk Carousel](reference_aisle_walk_carousel.md) — UNFINISHED (laggy, perf pass deferred): Set 8 #1 scroll-driven 3D corridor w/ floor+white room, GAP/SIDE tuning
+- [Orbit Cloud Carousel](reference_orbit_cloud_carousel.md) — Set 8 #2: drag-orbit sphere of products, fibonacci distribution, manual JS rotation matrix for z-sort
+- [Radial Dial Carousel](reference_radial_dial_carousel.md) — Set 8 #4: drag/scroll-spun dial, frontmost=selected; fixed a selection-desync bug (two angle formulas drifting apart) worth avoiding generally
+- [Miniman Commerce OS](project_miniman_commerce_os.md) — Documents/miniman-main: Supabase backend + on-site checkout + Store OS admin; tested locally (43 tests + browser E2E), NOT yet applied to Supabase; waiting on DB password/admin email
+- [Taste Skill Pack](reference_taste_skill_pack.md) — anti-slop frontend rules (dials, banned AI defaults, hero/layout discipline); full files in skill-packs/taste-skill/
+- [Emil Skills Pack](reference_emil_skills_pack.md) — animation/design-eng rules (easing, durations, Before/After review table), mobile-native fixes; skill-packs/emil-skills/
+- [DESIGN.md Pack](reference_design_md_pack.md) — 70+ brand design-system files (Ferrari, Nike, Apple, Stripe...) to build "like X"; skill-packs/design-md/
+- [Vercel Agent Skills Pack](reference_vercel_agent_skills_pack.md) — React/Next perf rules, web-design audit, view transitions; skill-packs/vercel-agent-skills/
+- [Apply Design Packs By Default](feedback_apply_design_packs_by_default.md) — LOAD for any website/UI work: full checklist (layout, AI-tell bans incl. zero em-dashes, motion, mobile-native) + conflict rules vs our own patterns
+- [Solar/Andoria/Mazin/Miniman Docs](reference_solar_andoria_docs.md) — Solar Smart Advisor formulas+architecture, ANDORIA color tokens (green/gold, never blue/purple), Dr. Mazin Android fixed-layer bug rules, Miniman Commerce OS rules, agy brand warning
+- [Sejo Store](project_sejo_store.md) — Documents/sejo-store: scroll-driven pitch site for sejo.store.eg (Nasr City menswear), IG photos + Gemini hero, EN/AR, what is real vs generated
+- [Web Animation Skills Pack](reference_web_animation_skills_pack.md) — 9 skills: GSAP/ScrollTrigger/Lenis, 60fps, reduced-motion, micro-interactions, page transitions, glass, SVG, Lottie; skill-packs/web-animation-skills/
+- [Scroll-Craft Pack](reference_scroll_craft_pack.md) — scroll-driven landing method (brief, feeling curve, signature move, verify) + engine; skill-packs/scroll-craft/
+- [Awwwards 3D Pack](reference_awwwards_3d_pack.md) — Three.js+GSAP+Lenis premium 3D sites: shaders, post-fx, transitions, anti-patterns; skill-packs/awwwards-3d/
+- [Immersive 3D Web Pack](reference_immersive_3d_web_pack.md) — R3F/three hero scenes, concept-to-form, retrofit, perf; skill-packs/immersive-3d-web/
+- [Cologne Sample](project_cologne_sample.md) — Documents/cologne-sample VETIVER 09 scroll site from new skill packs
+- [Blender Web 3D Pack](reference_blender_web_3d_pack.md) — headless Blender to GLB to Three.js viewer, AgX, meshopt, shaders, baked light; skill-packs/blender-web-3d/
+- [3D Web Pack (agents)](reference_3d_web_pack.md) — 6 role checklists + 4 skills (postprocessing, asset optimize, scaffold, scroll scene); skill-packs/3d-web-pack/
+- [3dmodel Skill Pack](reference_3dmodel_skill_pack.md) — closed-loop 3D modelling, AI-gen/Blender/Fusion CAD, web viewers; skill-packs/3dmodel-skill/
+- [FAINT Fragrance](project_faint_fragrance.md) — Documents/faint-fragrance: no-3D typographic poster fragrance site, :8792
+- [MMKicks Store](project_mmkicks_store.md) — Documents/mmkicks: no-3D pitch site for @mmkickswc sneaker store (Wesley Chapel FL), 3 pages, IG-DM ask/trade flow, :8962
+- [Dental Care Site](project_dental_care.md) — Documents/dental-care 'Alba Dental' EN/AR sample, 3D tooth cross-section, PC-only so far, :8950

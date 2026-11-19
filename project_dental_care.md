@@ -1,0 +1,16 @@
+---
+name: project-dental-care
+description: "Documents/dental-care: 'Alba Dental' EN/AR sample + diagnose.html (real 3D mouth, 32 selectable teeth, symptom questionnaire, WhatsApp hand-off); PC-only so far; serve on :8950"
+metadata:
+  node_type: memory
+  type: project
+  originSessionId: b8471ee4-6f9c-4498-a535-1b009827141b
+  modified: 2026-10-02T16:41:48.782Z
+---
+
+Built 2026-10-02. **index.html**: hero, pinned procedural-tooth cross-section scene, treatments accordion, scrubbed promise, first-visit path, FAQ, booking form -> WhatsApp. **diagnose.html** (added same day): user idea = patient steps inside a 3D mouth and selects painful teeth (single or multiple). Fly-in through lips, inside view (drag to look, presets Front/Right/Left/Upper/Lower), "All teeth" orbit overview, hover tooltip, click toggles, synced FDI chart + quadrant chips in panel, 3-step panel (teeth, symptoms/severity/duration/night/red flags, summary with rule-based urgency + likely causes + advice, WhatsApp message). Guidance only, never a diagnosis.
+**Model:** user asked me to FIND a model before making one. Used Dental Scope's core.glb (github Yoosseph/dental-scope, public/models, MIT code, models CC BY-SA 2.1 JP from BodyParts3D): 32 teeth named tooth-11..48 + gingiva-upper/lower, cm units, +Y up, +Z front, patient-left +X. Self-hosted at assets/models/mouth.glb with CREDITS.txt and an on-page credit line (Share-Alike applies to the model file). Needs meshopt decoder + GLTFLoader vendored under assets/vendor/three.
+**Lips (user said the first torus 'does not look like lips at all'):** searched for a model first (nothing free without login; Dental Scope's orbicularis-oris mesh is a sealed sheet that stretches into a ribbon when the jaw opens, so unusable). Now a parametric surface in mouth.js: opening curve with corner pinch + cupid's bow, rolled inner edge, vermilion->skin vertex colours, RGBA vertex alpha fading the face patch, skin fans out from mouth centre (avoids corner smears), opacity fades as camera flies in, hidden in overview. Teeth were praised ('look perfect'); do not change them.
+**Gotchas:** model normals were bad (teeth/gums rendered black) -> computeVertexNormals per mesh fixed it. Lower jaw lowered by OPEN=2.4 so a camera can sit inside. Upper/lower roots poke out of gums -> world clipping planes on tooth materials. Emissive alone washes out on ivory -> tint material colour on select. `[hidden]` is overridden by display CSS unless `[hidden]{display:none!important}`. Sticky footer covers last controls -> scroll-padding + padding-bottom. Remove "quick click" time limit (drops clicks on slow machines). Swiftshader ~1fps: test with reducedMotion:'reduce' so cameras snap, run tests via Start-Process + Monitor, long screenshot timeouts. Skip-link at left:-999px causes RTL overflow (use transform).
+**User scope:** PC only ("never mind other devices"); phone CSS exists but unreviewed. Clinic phone/address/hours are placeholders in assets/js/config.js. Copy and Arabic are drafts. Not tested: real GPU fps, Firefox/Safari, touch. Cache-bust: site.css v=3, diagnose.* v=4/5.
+Related: [[feedback-apply-design-packs-by-default]], [[feedback-local-assets-preferred]], [[reference-cine-generator-techniques]].
